@@ -15,6 +15,11 @@ A Windows program that builds your guild's «News» (MOTD) for The Elder Scrolls
 
 The data is read from the files of the addons [Arkadius' Trade Tools](https://www.esoui.com/downloads/info1752-ArkadiusTradeTools.html), [ITTs Donation Bot](https://www.esoui.com/downloads/info2765-ITTsDonationBotITTDB.html) and [AwesomeGuildStore](https://www.esoui.com/downloads/info695-AwesomeGuildStore.html). The program only reads them and changes nothing in the game or its files.
 
+### Special blocks
+
+- **Weekly trader.** The line about this week's guild trader is filled in automatically from the AwesomeGuildStore data (the trader's name and city) using a template you can edit. Your manual edits are kept; the refresh button in the block rebuilds the line from the data.
+- **«Thank you».** A closing block with several variants of different length, from the fullest to the shortest, separated by a `=====` line. The program puts into the news the fullest variant that fits into the characters left after all the other blocks (the game limit is 2048); if even the shortest one does not fit, the block is skipped.
+
 ### Installation
 
 Download `esoGmotw-win-Setup.exe` from the [Releases](../../releases/latest) page and run it. No administrator rights are needed; if necessary, the installer will install the .NET 8 Desktop Runtime. After that the program updates itself.
@@ -33,6 +38,11 @@ The files are not digitally signed, so Windows SmartScreen may show a warning: �
 - **Язык интерфейса:** русский и английский (выбор при первом запуске и в настройках).
 
 Данные берутся из файлов аддонов [Arkadius' Trade Tools](https://www.esoui.com/downloads/info1752-ArkadiusTradeTools.html), [ITTs Donation Bot](https://www.esoui.com/downloads/info2765-ITTsDonationBotITTDB.html) и [AwesomeGuildStore](https://www.esoui.com/downloads/info695-AwesomeGuildStore.html). Программа их только читает и ничего в игре и в её файлах не меняет.
+
+### Особые блоки
+
+- **Торговец недели.** Строка о торговце гильдии на этой неделе подставляется автоматически из данных AwesomeGuildStore (имя торговца и город) по шаблону, который можно менять. Ваша ручная правка сохраняется; кнопка обновления в блоке заново собирает строку из данных.
+- **«Спасибо».** Завершающий блок с несколькими вариантами текста разной длины — от полного до самого короткого, между ними строка `=====`. В новости попадает самый полный вариант, который помещается в знаки, оставшиеся после остальных блоков (предел игры — 2048); если не помещается даже самый короткий, блок пропускается.
 
 ### Установка
 
